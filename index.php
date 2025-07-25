@@ -25,14 +25,14 @@
     <div class="form-row">
         <div class="form-group">
             <label for="bodega">Bodega:</label>
-            <select id="select_bodega" name="bodega">
-                <option value="">-- Seleccione una bodega --</option>
+            <select id="bodega" name="bodega">
+                <option value=""></option>
             </select>
         </div>
         <div class="form-group">
             <label for="sucursal">Sucursal:</label>
             <select id="sucursal" name="sucursal">
-                <option value="">-- Seleccione una sucursal --</option>
+                <option value=""></option>
             </select>
         </div>
     </div>
@@ -41,8 +41,8 @@
     <div class="form-row">
         <div class="form-group">
             <label for="moneda">Moneda:</label>
-            <select id="moneda" name="moneda">
-                <option value="">-- Seleccione una moneda --</option>
+            <select id="divisa" name="divisa">
+                <option value=""></option>
             </select>
         </div>
         <div class="form-group">
@@ -52,12 +52,12 @@
     </div>
 
     <!-- Material del Producto -->
-    <fieldset>
+    <div class="form-group checkbox-group">
         <legend>Material del Producto:</legend>
         <div id="materiales-container">
             <!-- Los checkboxes se llenarán desde JS o manualmente -->
         </div>
-    </fieldset>
+    </div>
 
     <!-- Descripción del Producto -->
     <div class="form-row">
@@ -68,9 +68,11 @@
     </div>
 
     <!-- Botón de envío -->
-    <button type="button" id="btnGuardar">Guardar Producto</button>
+    <button type="submit" id="btnGuardar">Guardar Producto</button>
 </form>
 
+    <script src="/Public/js/validations.js"></script>
     <script src="/Public/js/index.js"></script>
+
 </body>
 </html>

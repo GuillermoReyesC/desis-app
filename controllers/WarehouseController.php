@@ -1,11 +1,29 @@
 <?php
-// cabecera de respuesta
-header('Content-Type: application/json');
+declare(strict_types=1);
 
-$sql = "SELECT id_bodega, nombre_bodega FROM bodegas ORDER BY nombre_bodega ASC";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
+class WarehouseController
+{
+    private Warehouse $model;
 
-$bodegas = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    public function __construct()
+    {
+        $db = getPDOConnection();
+        $this->model = new Warehouse($db);
+    }
 
-echo json_encode($bodegas);
+    public function listAjax(): array
+    {
+        try {
+            $warehouses = $this->model->getAll();
+            return ['success' => true, 'data' => $warehouses];
+        } catch (Throwable $e) {
+            error_log('listAjax error: ' . $e->getMessage());
+            return [
+                'success' => false,
+                'message' => 'Excepción capturada',
+                'error'   => $e->getMessage(),
+                'trace'   => $e->getTraceAsString()
+            ];
+        }
+    }
+}

@@ -26,12 +26,12 @@ class Product
         string $description
     ): int {
         $sql = "INSERT INTO products (
-                    product_code, 
-                    product_name, 
-                    warehouse_id, 
-                    agency_id, 
-                    currency_id, 
-                    price, 
+                    code,
+                    name,
+                    warehouse_id,
+                    agency_id,
+                    currency_id,
+                    price,
                     description
                 ) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
@@ -54,4 +54,13 @@ class Product
 
         return (int)$this->db->lastInsertId();
     }
+
+
+    public function existByCode(string $code): bool
+    {
+        $stmt = $this->db->prepare("SELECT COUNT(*) FROM products WHERE code = ?");
+        $stmt->execute([$code]);
+        return (bool)$stmt->fetchColumn();// devuelve true si existe
+    }
+
 }
