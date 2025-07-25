@@ -15,6 +15,9 @@ utilizando POO se intenta manter una estructura clara y organizada del código, 
 
 Docker no es necesario para el desarrollo, pero se recomienda para facilitar la instalación y despliegue de la aplicación y servidor mysql.
 
+Al levantar docker-compose se levanta un servidor mysql y la aplicación en un contenedor separado.
+
+
 ## Instalación
 1. Clona el repositorio:
     ```    git clone https://github.com/GuillermoReyesC/desis-app.git```
