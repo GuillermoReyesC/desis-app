@@ -23,7 +23,11 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
---
+-- Crear base de datos `desis_db`
+CREATE DATABASE IF NOT EXISTS `desis_db` DEFAULT CHARACTER SET utf8mb4 COLLATE
+use `desis_db`;
+-- --------------------------------------------------------
+
 -- Estructura de tabla para la tabla `agencies`
 --
 

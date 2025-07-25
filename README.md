@@ -30,6 +30,9 @@ Al levantar docker-compose se levanta un servidor mysql y la aplicación en un c
     - usuario: root
     - contraseña: rootpassword
 
+6. Importa la base de datos desde el archivo `desis_db.sql` en tu cliente MySQL.
+7. Si no usas docker, asegúrate de tener un servidor web con PHP y MySQL configurado.
+
 ## Estructura del Proyecto
 
 - `controllers/`: Controladores que manejan la lógica de negocio.
