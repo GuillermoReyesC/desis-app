@@ -20,7 +20,7 @@ Al levantar docker-compose se levanta un servidor mysql y la aplicación en un c
 
 ## Instalación
 1. Clona el repositorio:
-    ```    git clone https://github.com/GuillermoReyesC/desis-app.git```
+    ```git clone https://github.com/GuillermoReyesC/desis-app.git```
 2. Navega al directorio del proyecto:
     ```cd desis-app```
 3. Construye y levanta los contenedores de Docker:
