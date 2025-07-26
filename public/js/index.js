@@ -115,9 +115,6 @@ function poblarSelectBodegas(bodegas) {
         const option = document.createElement('option');
         option.value = bodega.id;
         option.textContent = bodega.name;
-        //agregar data-attr="" segun el, 2da pocision del array
-        //esto es para poder enviar el id de la bodega al servidor  
-        option.dataset.warehouseId = bodega.warehouse_id;
 
 
         select.appendChild(option);
