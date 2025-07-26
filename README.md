@@ -3,7 +3,8 @@ Este proyecto es una demostración de habilidades técnicas en PHP nativo, inclu
 
 ## Descripción
 Esta aplicación permite gestionar productos, materiales y sucursales. Incluye funcionalidades para crear, listar productos y materiales de productos, así como la gestión de sucursales y bodegas. La aplicación está diseñada para ser fácil de usar y mantener, siguiendo principios de programación limpia y modular.
-utilizando POO se intenta manter una estructura clara y organizada del código, siguiendo el principio de separación de responsabilidades.
+
+Se intenta mantener una estructura clara y organizada del código, siguiendo el principio de separación de responsabilidades.
 
 ## Requisitos/recursos
 - PHP 8.3
