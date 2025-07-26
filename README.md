@@ -1,4 +1,4 @@
-# Proyecto de habilidades tecnicas en php
+# Proyecto de prueba técnica en php
 Este proyecto es una demostración de habilidades técnicas en PHP nativo, incluyendo el uso de funciones, manejo de errores y buenas prácticas de programación.
 
 ## Descripción
@@ -27,7 +27,8 @@ Al levantar docker-compose se levanta un servidor mysql y la aplicación en un c
 3. Construye y levanta los contenedores de Docker:
     ```docker-compose up -d```
 4. Accede a la aplicación en tu navegador: [http://localhost:8080](http://localhost:8080)
-5- mysql:
+5. accede a mysql: en tu navegador: [http://localhost:8081](http://localhost:8081)
+
     - usuario: root
     - contraseña: rootpassword
 
