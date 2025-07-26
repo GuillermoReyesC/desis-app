@@ -266,3 +266,58 @@ document.getElementById('bodega').addEventListener('change', function () {
             console.error('Error de red:', error);
         });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const btnListar = document.getElementById('btnListarProductos');
+    const btnCerrar = document.getElementById('btnCerrarLista');
+    const contenedor = document.getElementById('containerListarProductos');
+    const tbody = document.getElementById('tbodyProductos');
+
+    // Ocultar el contenedor al cargar
+    contenedor.style.display = 'none';
+
+    btnListar.addEventListener('click', function () {
+        fetch('http://localhost:8080/api/products.php?action=list')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (json) {
+                if (json.success && Array.isArray(json.data)) {
+                    console.log('Productos:', json.data); // Solo productos
+
+                    // Limpiar tbody por si hay datos previos
+                    tbody.innerHTML = '';
+
+                    // Insertar cada producto como fila
+                    json.data.forEach(function (producto) {
+                        const tr = document.createElement('tr');
+
+                          tr.innerHTML = `
+                                <td>${producto.code}</td>
+                                <td>${producto.name}</td>
+                                <td>${producto.warehouse_name}</td>
+                                <td>${producto.agency_name}</td>
+                                <td>${producto.currency_name}</td>
+                                <td>${producto.price}</td>
+                                <td>${producto.description}</td>
+                            `;
+
+                        tbody.appendChild(tr);
+                    });
+
+                    contenedor.style.display = 'block'; // Mostrar tabla
+                } else {
+                    alert('No se pudieron obtener los productos');
+                }
+            })
+            .catch(function (error) {
+                console.error('Error al obtener productos:', error);
+                alert('Error al obtener productos');
+            });
+    });
+
+    btnCerrar.addEventListener('click', function () {
+        contenedor.style.display = 'none';
+    });
+});

@@ -132,3 +132,90 @@ textarea {
     width: 40%;
     transition: background-color 0.3s ease;
 }
+
+#btnListarProductos {
+    display: none; /* Oculto por defecto, cambiar por blocok para demo */
+    background-color:#1aab8a;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    /*centrado*/
+    border: none;
+    margin-left: auto;  
+    margin-right: auto;
+    cursor: pointer;
+    width: 40%;
+    transition: background-color 0.3s ease;
+}
+
+
+#btnListarProductos:hover {
+    background-color: #178f75;
+}
+
+#btnCerrarLista {
+ 
+    background-color:#f45a5a;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    /*centrado*/
+    display: block;
+    border: none;
+    margin-left: auto;  
+    margin-right: auto;
+    cursor: pointer;
+    width: 40%;
+    transition: background-color 0.3s ease;
+}
+
+
+#btnCerrarLista:hover {
+    background-color: #f26e6e;
+}
+
+
+#containerListarProductos {
+    display: none; /* Oculto por defecto */
+    width: auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #dcd6d6;
+
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 1rem;
+}
+
+.tabla-contenedor {
+    overflow-x:visible;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout:fixed;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 100px;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

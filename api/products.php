@@ -22,7 +22,7 @@ switch ($action) {
     $code = $_GET['code'] ?? '';
     echo json_encode($controller->checkCodeExistsAjax($code));
     exit;
-
+    
     case 'list':
         if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
             http_response_code(405);

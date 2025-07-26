@@ -71,6 +71,29 @@
     <button type="submit" id="btnGuardar">Guardar Producto</button>
 </form>
 
+   <button type="button" id="btnListarProductos">Listar Productos</button>
+
+    <div id="containerListarProductos" class="container mt-3">
+    <h2 class="mb-3">Lista de Productos</h2>
+    <div class="table-responsive">
+        <table id="tablaProductos" class="table table-striped table-bordered align-middle text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Bodega</th>
+                    <th>Sucursal</th>
+                    <th>Moneda</th>
+                    <th>Precio</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyProductos"></tbody>
+        </table>
+    </div>
+    <button id="btnCerrarLista" class="btn btn-secondary mt-3">Cerrar</button>
+</div>
+
     <script src="/Public/js/validations.js"></script>
     <script src="/Public/js/index.js"></script>
 

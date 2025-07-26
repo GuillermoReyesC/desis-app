@@ -72,6 +72,8 @@ class ProductController
         }
     }
 
+    
+
     public function listAjax(): array
     {
         try {

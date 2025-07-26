@@ -6,12 +6,7 @@ class Product
     private PDO $db;
     public function __construct(PDO $db) { $this->db = $db; }
 
-    public function getAll(): array
-    {
-        return $this->db
-            ->query("SELECT * FROM products ORDER BY id DESC")
-            ->fetchAll();
-    }
+
 
     /**
      * Devuelve el ID insertado o excepción si algo falla.
@@ -61,6 +56,31 @@ class Product
         $stmt = $this->db->prepare("SELECT COUNT(*) FROM products WHERE code = ?");
         $stmt->execute([$code]);
         return (bool)$stmt->fetchColumn();// devuelve true si existe
+    }
+
+    public function getAll(): array
+    {
+        $sql = "
+            SELECT
+                p.id,
+                p.code,
+                p.name,
+                w.name AS warehouse_name,
+                a.name AS agency_name,
+                c.name AS currency_name,
+                p.price,
+                p.description
+            FROM
+                products p
+            JOIN
+                warehouses w ON p.warehouse_id = w.id
+            JOIN
+                agencies a ON p.agency_id = a.id
+            JOIN
+                currencies c ON p.currency_id = c.id
+            ORDER BY p.id DESC
+        ";
+        return $this->db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     }
 
 }
