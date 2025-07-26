@@ -119,7 +119,7 @@ function poblarSelectBodegas(bodegas) {
         //esto es para poder enviar el id de la bodega al servidor  
         option.dataset.warehouseId = bodega.warehouse_id;
 
-        console.log("warehouse id",  bodega.warehouse_id);
+
         select.appendChild(option);
     }
     );
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .then(function (json) {
                 if (json.success && Array.isArray(json.data)) {
-                    console.log('Productos:', json.data); // Solo productos
+                    //console.log('Productos:', json.data); // Solo productos
 
                     // Limpiar tbody por si hay datos previos
                     tbody.innerHTML = '';

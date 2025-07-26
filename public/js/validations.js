@@ -102,16 +102,15 @@ document.getElementById('btnGuardar').addEventListener('click', function (e) {
     verificarCodigoUnico(codigo)
         .then(function (esUnico) {
             if (!esUnico) {
-                console.log("¿El código es único?:", esUnico);
+               // console.log("¿El código es único?:", esUnico);
                 alert("El código del producto ya está registrado.");
                 return;
             }
-
-            console.log("¿El código es único?:", esUnico);
+;
            // alert("Todas las validaciones pasaron. Código válido y único.");
             //si pasan las validaciones, guardar datos
-            ///esta funcion se define en index y envia los datos al servidor
-            console.log("Enviando datos del formulario...");
+            //esta funcion se define en index y envia los datos al servidor
+            //console.log("Enviando datos del formulario...");
             enviarDatosFormulario(); 
             window.enviarDatosFormulario = enviarDatosFormulario;
 
