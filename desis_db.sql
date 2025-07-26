@@ -115,15 +115,7 @@ INSERT INTO `products` (`id`, `code`, `name`, `warehouse_id`, `agency_id`, `curr
 (1, 'PRD12345', 'Laptop Lenovo ThinkPad', 1, 3, 1, 899.99, 'Laptop empresarial con 16GB RAM y 512GB SSD', '2025-07-24 23:29:13'),
 (2, 'QWERTY123', 'HP', 1, 3, 1, 899.99, 'Equipo barato', '2025-07-25 07:25:54'),
 (3, 'HP1000', 'HP1000', 3, 4, 1, 10000.00, 'computador negro hp', '2025-07-25 08:12:21'),
-(4, 'AUA123', 'aaa', 3, 4, 3, 999999.00, 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', '2025-07-25 08:13:32'),
-(5, 'AZZ333', 'BigMac XL', 3, 4, 2, 10000.00, 'lorem ipsum dolor sit amet', '2025-07-25 08:21:40'),
-(6, 'DFS12345', 'DFS 5500', 3, 3, 3, 200000.00, 'producto desconocido', '2025-07-25 08:25:40'),
-(7, 'ABC123', 'producto 10', 2, 1, 1, 5500.00, 'producto numero 10', '2025-07-25 08:27:21'),
-(8, 'NEW999', 'Producto999', 2, 3, 3, 500.00, 'nuevo producto', '2025-07-25 08:30:44'),
-(9, 'EEERR11', 'EEERRR', 3, 4, 3, 10000.00, 'producto test', '2025-07-25 08:32:48'),
-(10, 'PROD27', 'producto 1212112', 3, 4, 3, 10000.00, 'descripcion corta o larga', '2025-07-25 16:16:26'),
-(11, 'ZXC123', 'producto 1200', 3, 4, 3, 12000.00, 'producto mil docientos', '2025-07-25 22:28:26'),
-(12, 'ZT1200', 'otro producto', 1, 2, 2, 1200.00, 'otro producto', '2025-07-25 22:30:59');
+
 
 -- --------------------------------------------------------
 
