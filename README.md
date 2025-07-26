@@ -1,5 +1,5 @@
 # Proyecto de prueba técnica en php
-Este proyecto es una demostración de habilidades técnicas en PHP nativo, incluyendo el uso de funciones, manejo de errores y buenas prácticas de programación.
+Este proyecto es un desarrollo de una prueba técnica en PHP nativo JavaScript y HTML, incluyendo el uso de funciones, manejo de errores y buenas prácticas de programación.
 
 ## Descripción
 Esta aplicación permite gestionar productos, materiales y sucursales. Incluye funcionalidades para crear, listar productos y materiales de productos, así como la gestión de sucursales y bodegas. La aplicación está diseñada para ser fácil de usar y mantener, siguiendo principios de programación limpia y modular.
