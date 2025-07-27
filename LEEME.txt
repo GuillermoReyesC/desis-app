@@ -3,11 +3,11 @@ Instalacion del proyecto
 
 ## Instalación
 1. Clona el repositorio:
-    ```git clone https://github.com/GuillermoReyesC/desis-app.git```
+    git clone https://github.com/GuillermoReyesC/desis-app.git
 2. Navega al directorio del proyecto:
-    ```cd desis-app```
+    cd desis-app
 3. Construye y levanta los contenedores de Docker:
-    ```docker-compose up -d```
+    docker-compose up -d
 4. Accede a la aplicación en tu navegador: [http://localhost:8080](http://localhost:8081 para mysql) 
 5- mysql:
     - usuario: root
