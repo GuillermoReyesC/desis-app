@@ -1,4 +1,4 @@
-/* Fuente base y layout general */
+/* Layout general */
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -181,13 +181,11 @@ textarea {
 
 #containerListarProductos {
     display: none; /* Oculto por defecto */
-    width: 100%;
     margin-top: 20px;
     border: 1px solid #ccc;
     padding: 5px;
     background-color: #dcd6d6;
     margin: 20px auto;
-    max-width: 100%;
     overflow-x: auto;
     padding: 1rem;
 }

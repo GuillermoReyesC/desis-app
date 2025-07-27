@@ -23,10 +23,14 @@ class ProductController
             $price       = (float)($data['price'] ?? 0);
             $description = trim($data['description'] ?? '');
 
+            //productCode en mayusculas
+            $productCode = strtoupper($productCode);
+
+
             if (
                 $productCode === '' || $productName === '' || $description === '' ||
                 $warehouseId <= 0 || $agencyId <= 0 || $currencyId <= 0 || $price <= 0
-            ) 
+            )
                 {
                 return [
                     'success' => false,

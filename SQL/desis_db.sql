@@ -112,9 +112,9 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `code`, `name`, `warehouse_id`, `agency_id`, `currency_id`, `price`, `description`, `created_at`) VALUES
-(1, 'PRD12345', 'Laptop Lenovo ThinkPad', 1, 3, 1, 899.99, 'Laptop empresarial con 16GB RAM y 512GB SSD', '2025-07-24 23:29:13'),
-(2, 'QWERTY123', 'HP', 1, 3, 1, 899.99, 'Equipo barato', '2025-07-25 07:25:54'),
-(3, 'HP1000', 'HP1000', 3, 4, 1, 10000.00, 'computador negro hp', '2025-07-25 08:12:21');
+(1, 'PRD12345', 'Laptop Lenovo ThinkPad', 1, 3, 3, 899.99, 'Laptop empresarial con 16GB RAM y 512GB SSD', '2025-07-24 23:29:13'),
+(2, 'QWERTY123', 'HP', 1, 3, 3, 899.99, 'Equipo barato', '2025-07-25 07:25:54'),
+(3, 'HP1000', 'HP1000', 3, 4, 3, 10000.00, 'computador negro hp', '2025-07-25 08:12:21');
 
 
 -- --------------------------------------------------------
